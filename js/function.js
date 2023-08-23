@@ -9,14 +9,14 @@ function checkIfGameIsWon (first,second,third) {
     buttons[second].textContent==="X"&&
     buttons[third].textContent==="X"
     ) {
-        disableButtonsWhenGameIsWon ("player 1");
+        disableButtonsWhenGameIsWon ("player 1😊");
         return
 }else if(
     buttons[first].textContent==="O"&&
     buttons[second].textContent==="O"&&
     buttons[third].textContent==="O"
 ) {
-disableButtonsWhenGameIsWon ("player 2");
+disableButtonsWhenGameIsWon ("player 2😊");
 return;
 }else {
     Checkdraw();
@@ -48,11 +48,12 @@ function disableButtonsWhenGameIsWon(player){
     display.textContent =player+"won the game";
 }
 
+// it is to show when the whole boxes ia full and thereis no winner
 function Checkdraw(){
     for(let button of buttons){
         if (button.textContent==="") {
             return;
         }
     }
-    display.textContent="It is a Draw Game";
+    display.textContent="It is a Draw Game😜";
 }
